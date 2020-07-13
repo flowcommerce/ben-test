@@ -60,17 +60,17 @@ pipeline {
       }
     }
 
-    //stage('Deploy Helm chart') {
-    //  when { branch 'master' }
-    //  steps {
-    //    container('helm') {
-    //      script {
-    //      
-    //        new helmDeploy().deploy('ben-test-api', VERSION.printable())
-    //      
-    //      }
-    //    }
-    //  }
-    //}
+    stage('Deploy Helm chart') {
+      when { branch 'master' }
+      steps {
+        container('helm') {
+          script {
+          
+            new helmDeploy().deploy('ben-test-api', VERSION.printable())
+          
+          }
+        }
+      }
+    }
   }
 }
