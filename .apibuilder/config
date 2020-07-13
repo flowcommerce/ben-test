@@ -1,0 +1,17 @@
+code:
+  flow:
+    healthcheck:
+      version: latest
+      generators:
+        play_2_8_client: api/app/generated
+        play_2_x_routes: api/conf/healthcheck.routes
+    error:
+      version: latest
+      generators:
+        play_2_x_json: api/app/generated
+    ben-test:
+      version: latest
+      generators:
+        play_2_8_client: api/app/generated
+        play_2_8_mock_client: api/test/generated
+        play_2_x_routes: api/conf/ben_test.routes

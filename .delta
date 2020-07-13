@@ -1,0 +1,7 @@
+builds:
+  - api:
+      instance.type: t3.micro
+      initial.number.instances: 1
+      port.container: 9000
+      port.host: 6666
+      version: 1.3
