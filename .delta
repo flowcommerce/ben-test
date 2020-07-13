@@ -1,5 +1,6 @@
 builds:
   - api:
+      dockerfile: api/Dockerfile
       instance.type: t3.micro
       initial.number.instances: 1
       port.container: 9000
