@@ -21,13 +21,10 @@ lazy val api = project
     ),
     libraryDependencies ++= Seq(
       guice,
-      jdbc,
       ws,
       "io.flow"                %% "lib-play-play28"            % "0.6.1",
       "io.flow"                %% "lib-usage-play28"           % "0.1.27",
       "io.flow"                %% "lib-event-sync-play28"      % "0.4.87",
-      "io.flow"                %% "lib-postgresql-play-play28" % "0.3.77",
-      "org.postgresql"          % "postgresql"                 % "42.2.12",
       "io.flow"                %% "lib-test-utils-play28"      % "0.0.94" % Test,
       "org.mockito"             % "mockito-core"               % "3.3.3" % Test,
       compilerPlugin("com.github.ghik" % "silencer-plugin" % "1.6.0" cross CrossVersion.full),
