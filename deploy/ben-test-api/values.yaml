@@ -21,7 +21,7 @@ resources:
 jvmMemory: 3000
 
 nodeSelector: 
-  role: workers-spot
+  role: workers-spot-lg
 affinity: {}
 tolerations: 
   - key: "node-role.kubernetes.io/workers-spot"
